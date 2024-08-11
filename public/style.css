@@ -1,0 +1,76 @@
+header{
+    text-align: center;
+    padding: 6px;
+    width: 100%;
+    background-color: blue;
+}
+#buttonAdicionar{
+    position: absolute;
+    top: 110px;
+    right: 30px;
+    border-radius: 35px;
+    padding: 25px 30px;
+    border-color: transparent;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+body{
+    background-color: rgb(211, 218, 255);
+    margin: 0;
+}
+#centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#titulo{
+    text-align: center;
+    color: white;
+}
+
+#divCadastro, #buttonCadastrar, #buttonResetar, #buttonAtualizar, #informacoesCliente {
+    display: none;
+}
+#divCadastro, #buttonCadastrar, #buttonResetar{
+    background-color: rgb(218, 234, 248);
+    padding: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#divCadastro input, select{
+    width: 100%;
+    padding: 10px;
+    border-color: transparent;  
+}
+#divCadastro label{
+    font-size: large;
+    font-weight: bold;
+    margin-right: 80px;
+}
+#buttonCadastrar, #buttonResetar{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-color: transparent;
+    cursor: pointer;
+}
+#buttonCadastrar{
+    margin-right: 150px;
+    background-color: green;
+    color: white;
+}
+#buttonResetar{
+    margin-left: 150px;
+    margin-top: -40px;
+    background-color: rgb(214, 0, 0);
+    color: white;
+}
+#informacoesCliente {
+    display: none; /* Inicialmente oculta */
+    background-color: rgb(218, 234, 248);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: -280px;
+}

@@ -1,3 +1,10 @@
+document.getElementById("buttonAdicionar").addEventListener("click", function() {
+    document.getElementById("divCadastro").style.display = "block";
+    document.getElementById("buttonCadastrar").style.display = "block";
+    document.getElementById("buttonResetar").style.display = "block";
+    this.style.display = "none";
+});
+
 document.getElementById("buttonCadastrar").addEventListener("click", function() {
     const nome = document.getElementById("inputNome").value;
     const dataNascimento = document.getElementById("inputData").value;
@@ -10,6 +17,7 @@ document.getElementById("buttonCadastrar").addEventListener("click", function() 
     const cidade = document.getElementById("cidade").value;
     const estado = document.getElementById("estado").value;
     const cep = document.getElementById("cep").value;
+
     const informacoes = `
         <p><strong>Nome:</strong> ${nome}</p>
         <p><strong>Data de Nascimento:</strong> ${dataNascimento}</p>
@@ -23,5 +31,14 @@ document.getElementById("buttonCadastrar").addEventListener("click", function() 
         <p><strong>Estado:</strong> ${estado}</p>
         <p><strong>CEP:</strong> ${cep}</p>
     `;
+
     document.getElementById("informacoesCliente").innerHTML = informacoes;
+
+    // Ocultar área de cadastro e botões de ação
+    document.getElementById("divCadastro").style.display = "none";
+    document.getElementById("buttonCadastrar").style.display = "none";
+    document.getElementById("buttonResetar").style.display = "none";
+
+    // Mostrar área de informações do cliente
+    document.getElementById("informacoesCliente").style.display = "block";
 });
