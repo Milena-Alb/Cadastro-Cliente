@@ -1,37 +1,18 @@
-header{
+header {
     text-align: center;
     padding: 6px;
-    width: 100%;
     background-color: blue;
-}
-#buttonAdicionar{
-    position: absolute;
-    top: 110px;
-    right: 30px;
-    border-radius: 35px;
-    padding: 25px 30px;
-    border-color: transparent;
-    background-color: green;
-    color: white;
-    cursor: pointer;
+    margin: 0 -260px;
 }
 body{
     background-color: rgb(211, 218, 255);
-    margin: 0;
-}
-#centro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh;
+    margin: 0 260px;
 }
 #titulo{
     text-align: center;
     color: white;
 }
-
-#divCadastro, #buttonCadastrar, #buttonResetar, #buttonAtualizar, #informacoesCliente {
+#divCadastro, #buttonCadastrar, #buttonResetar, #buttonAtualizar, #buttonCancelar, #informacoesCliente {
     display: none;
 }
 #divCadastro, #buttonCadastrar, #buttonResetar{
@@ -48,29 +29,54 @@ body{
 #divCadastro label{
     font-size: large;
     font-weight: bold;
-    margin-right: 80px;
+}
+#buttonAdicionar{
+    position: absolute;
+    top: 110px;
+    right: 30px;
+    border-radius: 35px;
+    padding: 25px 30px;
+    border-color: transparent;
+    background-color: green;
+    color: white;
+    cursor: pointer;
 }
 #buttonCadastrar, #buttonResetar{
-    padding: 10px 20px;
+    padding: 15px 25px;
     border-radius: 5px;
     border-color: transparent;
     cursor: pointer;
 }
 #buttonCadastrar{
-    margin-right: 150px;
+    margin-left: 700px;
+    margin-top: 10px;
     background-color: green;
     color: white;
 }
 #buttonResetar{
-    margin-left: 150px;
-    margin-top: -40px;
+    margin-left: 850px;
+    margin-top: -50px;
     background-color: rgb(214, 0, 0);
     color: white;
 }
-#informacoesCliente {
-    display: none; /* Inicialmente oculta */
-    background-color: rgb(218, 234, 248);
-    padding: 20px;
+#buttonAtualizar, #buttonCancelar {
+    padding: 10px 20px;
     border-radius: 5px;
-    margin-top: -280px;
+    border-color: transparent;
+    cursor: pointer;
+    background-color: orange; 
+    color: white;
 }
+#buttonCancelar {
+    background-color: red;
+    color: white;
+}
+#informacoesCliente {
+    text-align: left;
+    padding: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: rgb(218, 234, 248);  
+    font-size: large;  
+}
+
