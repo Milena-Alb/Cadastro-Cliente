@@ -12,7 +12,7 @@ body{
     text-align: center;
     color: white;
 }
-#divCadastro, #buttonCadastrar, #buttonResetar, #buttonAtualizar, #buttonCancelar, #informacoesCliente {
+#divCadastro, #buttonCadastrar,#buttonSalvar, #buttonResetar, #buttonAtualizar, #buttonCancelar, #informacoesCliente {
     display: none;
 }
 #divCadastro, #buttonCadastrar, #buttonResetar{
@@ -41,17 +41,20 @@ body{
     color: white;
     cursor: pointer;
 }
-#buttonCadastrar, #buttonResetar{
+#buttonCadastrar, #buttonResetar, #buttonSalvar{
     padding: 15px 25px;
     border-radius: 5px;
     border-color: transparent;
     cursor: pointer;
 }
-#buttonCadastrar{
+#buttonCadastrar, #buttonSalvar{
     margin-left: 700px;
-    margin-top: 10px;
+    margin-top: 0px;
     background-color: green;
     color: white;
+}
+#buttonSalvar{
+    margin-top: -50px;
 }
 #buttonResetar{
     margin-left: 850px;
@@ -79,4 +82,24 @@ body{
     background-color: rgb(218, 234, 248);  
     font-size: large;  
 }
-
+#clientesList {
+    display: block; 
+    padding: 20px;
+    margin-top: 30px;
+    font-size: large;
+}
+#botoesClientes button {
+    padding: 10px 20px; 
+    font-weight: bold;
+    color: rgba(83, 83, 238, 0.848);
+    border: 2px solid rgba(83, 83, 238, 0.848);
+    border-radius: 5px;
+    background-color: transparent; 
+    cursor: pointer; 
+    margin: 5px; 
+    font-size: 16px; 
+}
+#botoesClientes button:hover {
+    background-color: rgba(83, 83, 238, 0.1); 
+    color: rgba(83, 83, 238, 1); 
+}
